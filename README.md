@@ -35,7 +35,7 @@ YOUTUBEVIDEODOWNLOADBOT/
 ├── run.py                      # Uygulamanın başlatılması için ana dosya
 └── videoLink.txt               # Toplu video indirme için video URL'leri
 
-Özellikler
+### Özellikler
 	•	YouTube Video İndirici: Kullanıcıların YouTube videolarını farklı kalite seçenekleriyle indirmelerine olanak sağlar.
 	•	Tema Desteği: Açık ve karanlık mod arasında geçiş yapılabilir.
 	•	İndirilen Videoların Listelenmesi: İndirilen videolar kullanıcıya gösterilir ve yeniden indirilebilir.
