@@ -1,8 +1,8 @@
-YouTube Video Downloader
+# **YouTube Video Downloader**
 
 Bu proje, kullanıcıların YouTube videolarını farklı kalite seçenekleriyle indirmelerini sağlayan bir web uygulamasıdır. Flask kullanılarak geliştirilmiş, modern bir arayüz için Bootstrap kullanılmıştır.
 
-📂 Proje Hiyerarşisi
+## **📂 Proje Hiyerarşisi**
 
 YOUTUBEVIDEODOWNLOADBOT/
 ├── app/
@@ -41,6 +41,7 @@ YOUTUBEVIDEODOWNLOADBOT/
 🚀 Kurulum ve Çalıştırma
 
 Gerekli Bağımlılıkların Yüklenmesi
+
 	1.	Projeyi klonlayın:
 	git clone https://github.com/kullaniciAdi/YoutubeVideoDownloadBot.git
 	cd YoutubeVideoDownloadBot
@@ -54,6 +55,7 @@ Gerekli Bağımlılıkların Yüklenmesi
 
 
 Uygulamayı Çalıştırma
+
 	1.	İndirilen videolar için bir klasör oluşturun:
 	mkdir videoSavingfolder
 
@@ -64,17 +66,20 @@ Uygulamayı Çalıştırma
 	http://127.0.0.1:5000
 
 📘 Kullanım
+
 	1.	Video URL’sini Girin: İndirmek istediğiniz YouTube video URL’sini forma yazın.
 	2.	Video Kalitesini Seçin: Kalite seçeneklerinden birini seçin (ör. 1080p, 720p).
 	3.	“İndir” Butonuna Tıklayın: Video seçilen kalitede indirilecektir.
 	4.	İndirilen Videoları Görüntüleyin: İndirilen videolar liste halinde gösterilir.
 
 🛠️ Geliştirme Notları
+
 	•	Tema Değişimi: scripts.js dosyasındaki tema değişim fonksiyonları güncellenebilir.
 	•	Yeni Özellikler: Başka platformlardan indirme özelliği eklenebilir veya daha fazla kalite seçeneği eklenebilir.
 	•	Config Güncellemeleri: settings/config.py dosyasını düzenleyerek indirilen videoların varsayılan kaydedileceği klasörü değiştirebilirsiniz.
 
 🔑 Önemli Notlar
+
 	•	run.py ile çalıştırılır: Proje başlatma işlemleri bu dosyada tanımlıdır.
 	•	Git’e dahil edilmeyen dosyalar: .gitignore dosyasında, venv/, __pycache__/ gibi gereksiz dosyalar hariç tutulmuştur.
 
