@@ -2,8 +2,9 @@
 
 Bu proje, kullanıcıların YouTube videolarını farklı kalite seçenekleriyle indirmelerini sağlayan bir web uygulamasıdır. Flask kullanılarak geliştirilmiş, modern bir arayüz için Bootstrap kullanılmıştır.
 
-## **📂 Proje Hiyerarşisi**
+## Proje Hiyerarşisi
 
+```plaintext
 YOUTUBEVIDEODOWNLOADBOT/
 ├── app/
 │   ├── __init__.py             # Flask uygulama yapılandırması
