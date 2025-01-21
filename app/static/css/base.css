@@ -1,0 +1,214 @@
+/* Genel gövde ayarları */
+body {
+    margin: 40px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Mod geçişi için animasyon */
+}
+
+/* Logo ayarları */
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Form kutusu */
+form {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+/* Butonlar */
+form button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* İndirilen videolar kutusu */
+.downloads-box {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Liste stili */
+.downloads-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.downloads-list li {
+    margin-bottom: 8px;
+}
+
+.downloads-list li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.downloads-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Başlıkların hizalanması */
+h5 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+/* Toggle container styling */
+.toggle-container {
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+    position: relative;
+}
+
+/* Hide the default checkbox */
+.toggle-container input {
+    display: none;
+}
+
+/* Styling the slider */
+.toggle-slider {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #87CEEB, #4682B4); /* Light mode gradient */
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Slider circle */
+.toggle-slider::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border-radius: 50%;
+    transition: left 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Sun and moon icons */
+.toggle-slider .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.toggle-slider .sun {
+    left: 10px;
+    opacity: 1; /* Show sun in light mode */
+}
+
+.toggle-slider .moon {
+    right: 10px;
+}
+
+/* When checkbox is checked (Dark Mode) */
+.toggle-container input:checked + .toggle-slider {
+    background: linear-gradient(135deg, #2b2b2b, #000); /* Dark mode gradient */
+}
+
+.toggle-container input:checked + .toggle-slider::before {
+    left: 38px; /* Move toggle circle */
+}
+
+.toggle-container input:checked + .toggle-slider .sun {
+    opacity: 0; /* Hide sun */
+}
+
+.toggle-container input:checked + .toggle-slider .moon {
+    opacity: 1; /* Show moon */
+}
+
+/* Dark Mode Toggle - Sağ üst köşede */
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* Varsayılan checkbox gizleme */
+.dark-mode-toggle input {
+    display: none;
+}
+
+/* Toggle container */
+.toggle-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #ffffff; /* Açık arka plan */
+    border-radius: 50%; /* Daire görünümü */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* Hafif gölgeler */
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Güneş ve Ay simgeleri */
+.toggle-label .toggle-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-label .toggle-icon.sun {
+    color: #ffd700; /* Güneş rengi (altın sarısı) */
+    opacity: 1; /* Açık modda görünür */
+    transform: scale(1); /* Normal boyut */
+}
+
+.toggle-label .toggle-icon.moon {
+    color: #808080; /* Ay rengi (gri) */
+    opacity: 0; /* Açık modda gizli */
+    transform: scale(0.5); /* Küçük boyut */
+}
+
+/* Checkbox kontrolü: Dark Mode */
+.dark-mode-toggle input:checked + .toggle-label {
+    background: #2c2c2c; /* Koyu arka plan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.15); /* Koyu mod gölgeleri */
+}
+
+.dark-mode-toggle input:checked + .toggle-label .toggle-icon.sun {
+    opacity: 0; /* Güneşi gizle */
+    transform: scale(0.5); /* Küçült */
+}
+
+.dark-mode-toggle input:checked + .toggle-label .toggle-icon.moon {
+    opacity: 1; /* Ayı göster */
+    transform: scale(1); /* Normal boyut */
+}

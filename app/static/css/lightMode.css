@@ -1,0 +1,26 @@
+/* Açık mod gövde */
+body {
+    background-color: #ffffff; /* Beyaz arka plan */
+    color: #121212; /* Koyu metin rengi */
+}
+
+/* Form kutusu arka plan */
+form {
+    background: rgba(240, 240, 240, 0.9); /* Açık gri arka plan */
+}
+
+/* İndirilen videolar kutusu */
+.downloads-box {
+    background-color: #f4f4f4; /* Hafif gri arka plan */
+    border: 1px solid #ccc; /* Açık gri kenar */
+}
+
+/* Butonlar */
+form button {
+    background-color: #444; /* Koyu gri buton */
+    color: #fff; /* Beyaz metin */
+}
+
+form button:hover {
+    background-color: #222; /* Daha koyu gri hover */
+}
