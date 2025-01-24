@@ -89,5 +89,4 @@ Uygulamayı Çalıştırma
 Sorularınız veya geri bildirimleriniz için bana ulaşabilirsiniz:
 📧 aliakkayamain@gmail.com
 
-
-deneme
+.
