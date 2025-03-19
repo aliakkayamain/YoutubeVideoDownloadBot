@@ -4,7 +4,7 @@ Bu proje, kullanıcıların YouTube videolarını farklı kalite seçenekleriyle
 
 ## Proje Hiyerarşisi
 
-```plaintext
+```
 YOUTUBEVIDEODOWNLOADBOT/
 ├── app/
 │   ├── __init__.py             # Flask uygulama yapılandırması
@@ -32,6 +32,8 @@ YOUTUBEVIDEODOWNLOADBOT/
 ├── requirements.txt            # Gereken Python kütüphaneleri
 ├── run.py                      # Uygulamanın başlatılması için ana dosya
 └── videoLink.txt               # Toplu video indirme için video URL'leri
+
+```
 
 🎯 Özellikler
 	•	YouTube Video İndirici: Kullanıcıların YouTube videolarını farklı kalite seçenekleriyle indirmelerini sağlar.
@@ -89,4 +91,4 @@ Uygulamayı Çalıştırma
 Sorularınız veya geri bildirimleriniz için bana ulaşabilirsiniz:
 📧 aliakkayamain@gmail.com
 
-.
+---
